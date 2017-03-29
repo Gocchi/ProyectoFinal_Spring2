@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pendientes</title>
+	<meta charset="utf-8">
+</head>
+<body>
+ <h1>Trello</h1>
+
+   <form>
+    <h3>Pendientes semana</h3>
+    <ul id="lista" onclick="borrarPendiente()">
+    </ul>   
+   	
+   	<input type="text" id="pendienteAgregado"> 
+   	<input type="button" id="agregar" value="Agregar" onclick="agregarPendiente()"> 
+   	
+   	 
+   </form>
+
+   <form>
+    <h3>Pendientes otra semana</h3>
+    <ul id="listaOtra" onclick="borrarPendienteOtra()">
+    </ul>   
+   	
+   	<input type="text" id="pendienteAgregadoOtra"> 
+   	<input type="button" id="agregar" value="Agregar" onclick="agregarPendienteOtra()"> 
+   	
+   	 
+   </form>
+<script type="text/javascript" src="Js/functionTrello.js"></script>
+</body>
+</html>
