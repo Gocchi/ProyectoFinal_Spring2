@@ -1,4 +1,5 @@
 
+
 function agregarPendiente(){
 	
 	var lista = document.getElementById("pendienteAgregado").value;
@@ -18,6 +19,9 @@ function borrarPendiente(){
         };
     }
 }
+
+
+
 
 function agregarPendienteOtra(){
 	
@@ -39,6 +43,17 @@ function borrarPendienteOtra(){
     }
 }
 
+function eliminarLista(){
+    var contenedor= document.getElementById("ListaCompleta");
+    while (contenedor.hasChildNodes())
+        contenedor.removeChild(contenedor.firstChild);
+}
+
+function eliminarListaOtra(){
+    var contenedor= document.getElementById("ListaCompletaOtra");
+    while (contenedor.hasChildNodes())
+        contenedor.removeChild(contenedor.firstChild);
+}
 
 
 

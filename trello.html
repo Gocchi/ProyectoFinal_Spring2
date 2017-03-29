@@ -4,12 +4,12 @@
 	<title>Pendientes</title>
 	<meta charset="utf-8">
 </head>
-<body style="background-color:#81BEF7;">
+<body id="trello" style="background-color:#81BEF7;">
   <h1>Trello</h1>
   <h4>Instrucciones</h4>
     <p>Para borrar los pendientes de tu lista da click sobre el</p> 
 
-   <div id="contenedor" style = "width: 1000px;
+   <div id="ListaCompleta" style = "width: 1000px;
   background-color:#FFFFFF;
   margin-left:   30px;
   margin-right:  30px;
@@ -23,13 +23,13 @@
    	
    	<input type="text" id="pendienteAgregado"> 
    	<input type="button" id="agregar" value="Crear Pendiente" onclick="agregarPendiente()"> 
-    <input type="reset">
+    <input type="reset" onclick="eliminarLista()" value="Borrar Lista">
 
   </div>
 
    
 
-  <div id= "contendor" style = "width: 1000px;
+  <div id= "ListaCompletaOtra" style = "width: 1000px;
   background-color:#FFFFFF;
   margin-left:   30px;
   margin-right:  30px;
@@ -41,14 +41,17 @@
    	
    	<input type="text" id="pendienteAgregadoOtra"> 
    	<input type="button" id="agregar" value="Crear Pendiente" onclick="agregarPendienteOtra()"> 
+    <input type="reset" onclick="eliminarListaOtra()" value="Borrar Lista">
+
    	
    </div>
 
    <div>
    <h3>Agregar Lista</h3>
 
-   <input type="text" id="ListaCompleta"> 
+  <input type="text" id="ListaCompleta"> 
   <input type="button" id="agregarLista" value="Agregar Lista" onclick="agregarLista()"> 
+ 
   </div>
 
 
